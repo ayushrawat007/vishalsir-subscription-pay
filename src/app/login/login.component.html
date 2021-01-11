@@ -1,0 +1,137 @@
+<!-- <button class="btn btn-info" type="button" (click)="Login();">Login</button> -->
+<!-- <app-header></app-header> -->
+<!-- <button class="btn btn-info" type="button" (click)="Login();">Login</button> -->
+<!-- <div _ngcontent-tqr-c1="" class="app-header header-shadow">
+
+  <div _ngcontent-tqr-c1="" class="app-header header-shadow">
+    <div _ngcontent-tqr-c1="" class="app-header__logo col-lg-2"><a _ngcontent-tqr-c1="" class="navbar-brand"><img
+          _ngcontent-tqr-c1="" alt="SabPaisa" src="assets/images/sabpaisa-logo.png"></a></div>
+    <div _ngcontent-tqr-c1="" class="col-lg-10">
+      <h4 _ngcontent-tqr-c1="" class="lnht float-right"></h4>
+    </div>
+  </div>
+</div> -->
+<div class="container">
+  <div class="row justify-content-center">
+
+    <div class="col-lg-6 pull-right- mainstop rightbord rightpos">
+      <div class="container divBorder login-box bgwht">
+        <h3 class="txtAlignC">WELCOME TO</h3>
+        <div class="login-logo" style="text-align: center;">
+          <img src="assets/images/sabpaisa-logo.png" height="40" class="logo" />
+        </div>
+        <!-- <h3 class="txtAlignC">Payout Login</h3> -->
+        <hr />
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="userName" [(ngModel)]="userName" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" [(ngModel)]="password" required>
+        <button class="btn btn-dark" type="button" (click)="Login()">Login</button>
+        <!-- <button type="submit">Login</button> -->
+
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div _ngcontent-tqr-c4="" class="login-box- bgwht- lft-cnt" style="text-align: center;">
+
+        <div class='walkthrough show reveal col-lg-12'>
+          <div class='walkthrough-pagination'>
+            <a class='dot active'></a>
+            <a class='dot'></a>
+            <a class='dot'></a>
+            <a class='dot'></a>
+            <a class='dot'></a>
+          </div>
+          <div class='walkthrough-body'>
+            <ul class='screens animate'>
+              <li class='screen active'>
+                <div class='media logo'>
+                  <img class='logo' src='https://s3.amazonaws.com/jebbles-codepen/icon.png'>
+                </div>
+                <h3>
+                  Product Intro
+                  <!-- <br>Walkthrough</br> -->
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+              </li>
+              <li class='screen'>
+                <div class='media books'>
+                  <img class='icon' src='https://s3.amazonaws.com/jebbles-codepen/book_icon_1.png'>
+                  <img class='icon' src='https://s3.amazonaws.com/jebbles-codepen/book_icon_2.png'>
+                  <img class='icon' src='https://s3.amazonaws.com/jebbles-codepen/book_icon_3.png'>
+                </div>
+                <h3>
+                  Data and File
+                  <!-- <br>Management</br> -->
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+              </li>
+              <li class='screen'>
+                <div class='media bars'>
+                  <img class='icon' src='https://s3.amazonaws.com/jebbles-codepen/bar_icon_axis.png'>
+                  <img class='icon' src='https://s3.amazonaws.com/jebbles-codepen/bar_icon_3.png'>
+                  <img class='icon' src='https://s3.amazonaws.com/jebbles-codepen/bar_icon_2.png'>
+                  <img class='icon' src='https://s3.amazonaws.com/jebbles-codepen/bar_icon_1.png'>
+                </div>
+                <h3>
+                  Analytics
+                  <!-- <br>and Metrics</br> -->
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+              </li>
+              <li class='screen'>
+                <div class='media files'>
+                  <img class='icon' src='https://s3.amazonaws.com/jebbles-codepen/file_icon_1.png'>
+                  <img class='icon' src='https://s3.amazonaws.com/jebbles-codepen/file_icon_2.png'>
+                  <img class='icon' src='https://s3.amazonaws.com/jebbles-codepen/file_icon_3.png'>
+                  <img class='icon' src='https://s3.amazonaws.com/jebbles-codepen/file_icon_4.png'>
+                </div>
+                <h3>
+                  Reporting
+                  <!-- <br>and Insights</br> -->
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+              </li>
+              <li class='screen'>
+                <div class='media comm'>
+                  <img class='icon' src='https://s3.amazonaws.com/jebbles-codepen/comm_icon_1.png'>
+                  <img class='icon' src='https://s3.amazonaws.com/jebbles-codepen/comm_icon_2.png'>
+                </div>
+                <h3>
+                  Communications
+                  <!-- <br>Tools</br> -->
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+              </li>
+            </ul>
+            <button class='prev-screen'>
+              <i class='icon-angle-left'></i>
+            </button>
+            <button class='next-screen'>
+              <i class='icon-angle-right'></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- <div _ngcontent-tqr-c4="" class="btm-pad"><label _ngcontent-tqr-c4="" class="bld headings">Hybrid Payment
+            Gateway&#8203;</label>
+          <p _ngcontent-tqr-c4="" style="padding-top:20px;"> World's first hybrid online payment gateway with one of
+            industry's highest transaction success rates. <a _ngcontent-tqr-c4="" href="https://sabpaisa.in/"
+              style="color:blue;" target="_blank">Learn more</a></p><img _ngcontent-tqr-c4="" class="float-left"
+            src="assets/images/cards.png">
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>

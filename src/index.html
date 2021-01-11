@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SubPaisa : Payout</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script> -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+<link rel="preload" href="https://cdn.officevibe.com/assets/Fonts/source-sans-pro-regular.woff2" as="font" crossorigin>
+<link rel="preload" href="https://cdn.officevibe.com/assets/Fonts/source-sans-pro-semibold.woff2" as="font" crossorigin>
+<link rel="preload" href="https://cdn.officevibe.com/assets/Fonts/source-sans-pro-light.woff2" as="font" crossorigin>
+<link rel="preload" href="https://cdn.officevibe.com/assets/Fonts/work-sans-v4-latin-regular.woff2" as="font"
+  crossorigin>
+<link rel="preload" href="https://cdn.officevibe.com/assets/Fonts/work-sans-v5-latin-medium.woff2" as="font"
+  crossorigin>
+<link rel="preload" href="https://cdn.officevibe.com/assets/Fonts/work-sans-v5-latin-semibold.woff2" as="font"
+  crossorigin>
+<link rel="preload" href="https://cdn.officevibe.com/assets/Fonts/work-sans-latin-bold.woff2" as="font" crossorigin>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:700,300'>
+<link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css'>
+
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+  <script type="module" src="https://unpkg.com/x-frame-bypass"></script> -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<script>
+
+  (function () {
+    $(document).ready(function () {
+      var walkthrough;
+      walkthrough = {
+        index: 0,
+        nextScreen: function () {
+          if (this.index < this.indexMax()) {
+            this.index++;
+            return this.updateScreen();
+          }
+        },
+        prevScreen: function () {
+          if (this.index > 0) {
+            this.index--;
+            return this.updateScreen();
+          }
+        },
+        updateScreen: function () {
+          this.reset();
+          this.goTo(this.index);
+          return this.setBtns();
+        },
+        setBtns: function () {
+          var $lastBtn, $nextBtn, $prevBtn;
+          $nextBtn = $('.next-screen');
+          $prevBtn = $('.prev-screen');
+          $lastBtn = $('.finish');
+          if (walkthrough.index === walkthrough.indexMax()) {
+            $nextBtn.prop('disabled', true);
+            $prevBtn.prop('disabled', false);
+            return $lastBtn.addClass('active').prop('disabled', false);
+          } else if (walkthrough.index === 0) {
+            $nextBtn.prop('disabled', false);
+            $prevBtn.prop('disabled', true);
+            return $lastBtn.removeClass('active').prop('disabled', true);
+          } else {
+            $nextBtn.prop('disabled', false);
+            $prevBtn.prop('disabled', false);
+            return $lastBtn.removeClass('active').prop('disabled', true);
+          }
+        },
+        goTo: function (index) {
+          $('.screen').eq(index).addClass('active');
+          return $('.dot').eq(index).addClass('active');
+        },
+        reset: function () {
+          return $('.screen, .dot').removeClass('active');
+        },
+        indexMax: function () {
+          return $('.screen').length - 1;
+        },
+        closeModal: function () {
+          $('.walkthrough, .shade').removeClass('reveal');
+          return setTimeout((() => {
+            $('.walkthrough, .shade').removeClass('show');
+            this.index = 0;
+            return this.updateScreen();
+          }), 200);
+        },
+        openModal: function () {
+          $('.walkthrough, .shade').addClass('show');
+          setTimeout((() => {
+            return $('.walkthrough, .shade').addClass('reveal');
+          }), 200);
+          return this.updateScreen();
+        }
+      };
+      $('.next-screen').click(function () {
+        return walkthrough.nextScreen();
+      });
+      $('.prev-screen').click(function () {
+        return walkthrough.prevScreen();
+      });
+      $('.close').click(function () {
+        return walkthrough.closeModal();
+      });
+      $('.open-walkthrough').click(function () {
+        return walkthrough.openModal();
+      });
+      walkthrough.openModal();
+
+      // Optionally use arrow keys to navigate walkthrough
+      return $(document).keydown(function (e) {
+        switch (e.which) {
+          case 37:
+            // left
+            walkthrough.prevScreen();
+            break;
+          case 38:
+            // up
+            walkthrough.openModal();
+            break;
+          case 39:
+            // right
+            walkthrough.nextScreen();
+            break;
+          case 40:
+            // down
+            walkthrough.closeModal();
+            break;
+          default:
+            return;
+        }
+        e.preventDefault();
+      });
+    });
+
+  }).call(this);
+</script>
+<script>
+
+  $(document).ready(function () {
+    $('.nav-tabs > li > a').click(function (event) {
+      event.preventDefault();//stop browser to take action for clicked anchor
+
+      //get displaying tab content jQuery selector
+      var active_tab_selector = $('.nav-tabs > li.active > a').attr('href');
+
+      //find actived navigation and remove 'active' css
+      var actived_nav = $('.nav-tabs > li.active');
+      actived_nav.removeClass('active');
+
+      //add 'active' css into clicked navigation
+      $(this).parents('li').addClass('active');
+
+      //hide displaying tab content
+      $(active_tab_selector).removeClass('active');
+      $(active_tab_selector).addClass('hide');
+
+      //show target tab content
+      var target_tab_selector = $(this).attr('href');
+      $(target_tab_selector).removeClass('hide');
+      $(target_tab_selector).addClass('active');
+    });
+  });
+
+
+
+
+
+</script>
+</head>
+<body class="mat-typography">
+  <app-root></app-root>
+
+</body>
+</html>

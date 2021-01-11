@@ -1,0 +1,440 @@
+<span class="topheader">Mandate details</span>
+<hr />
+<div style="display: none;">
+    <ul class="nav nav-tabs">
+        <li class="active">
+            <a href="#tab1">1</a>
+        </li>
+        <li>
+            <a href="#tab2">2</a>
+        </li>
+        <li>
+            <a href="#tab3">3</a>
+        </li>
+    </ul>
+</div>
+
+<!--Step first-->
+<!-- <span class="w3-light-grey w3-tiny">
+    <div class="w3-container w3-green" style="width:33.3%"><span class="circle">1</span></div>
+</span> -->
+
+<!--Step second-->
+<!-- <span class="w3-light-grey w3-tiny">
+    <div class="w3-container w3-green" style="width:33.3%"><span class="circle">2</span></div>
+</span> -->
+
+<!--Step third-->
+<!-- <span class="w3-light-grey w3-tiny">
+    <div class="w3-container w3-green" style="width:33.3%"><span class="circle">3</span></div>
+</span> -->
+<!-- 
+<div class="mainsection">
+
+
+    <section id="tab1" class="tab-content" *ngIf="tab1">
+
+        <h2>Mandate Details</h2>
+        <div class="form-row">
+
+            <div class="form-group col-md-4">
+                <label for="inputEmail4">Mandate value purpose</label>
+
+                <select class="form-group custom-select" id="">
+                    <option selected>Choose Mandate value purpose</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+
+            </div>
+            <div class="form-group col-md-4">
+                <label for="mandatepurpose">Mandate purpose</label>
+                <select class="form-group custom-select" id="">
+                    <option selected>Choose Mandate purpose</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputAddress">Frequency</label>
+
+                <select class="form-group custom-select" id="">
+                    <option selected>Choose Frequency</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputAddress2">Consumer Referance No.</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Consumer Referance No.">
+
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputCity">ECS Amount (INR)</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Enter ECS Amount (INR)">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputCity">Fixed / Maximum Amount (INR)</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Enter Fixed / Maximum Amount (INR)">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputCity">Scheme Referance No</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Enter Scheme Referance No">
+            </div>
+            <div class="form-group col-md-4">
+                <div class="col-md-6" style="padding: 0;">
+                    <label for="inputCity">Due Date</label>
+                    <input type="date" class="form-control" id="inputCity" placeholder="Due date">
+                </div>
+                <div class="col-md-6 pull-right" style="padding: 0 0 0 5px;">
+                    <label for="inputCity">ECS Start Date</label>
+                    <input type="date" class="form-control" id="inputCity" placeholder="ECS Start Date">
+                </div>
+            </div>
+
+            <div class="form-group col-md-4">
+                <div class="col-md-6" style="padding: 0;">
+                    <label for="inputCity">ECS End Date</label>
+                    <input type="date" class="form-control" id="inputCity" placeholder="ECS End Date">
+                </div>
+                <div class="col-md-6 pull-right" style="padding: 0 0 0 5px;">
+                    <label for="inputCity">Until Cancelled</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Until Cancelled" disabled>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+    <section id="tab2" class="tab-content" *ngIf="tab2">
+
+        <h2>Personal details</h2>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+
+        </div>
+
+
+
+    </section>
+    <section id="tab3" class="tab-content" *ngIf="tab3">
+
+        <span class="w3-green2nd"></span>
+        <h2>Bank details</h2>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <div class="tab-content">
+        <button type="submit" class="btn- btn-primary" *ngIf="btntab1" (click)="Tab1()">Next to Personal
+            details</button>
+
+
+        <button type="submit" class="btn- btn-primary pad-right redcolor" *ngIf="btntabback2" (click)="Tab2back()">Back
+            to
+            Mandate
+            details</button>
+
+
+        <button type="submit" class="btn- btn-primary" *ngIf="btntab2" (click)="Tab2()">Next to Bank details</button>
+
+
+
+        <button type="submit" class="btn- btn-primary pad-right redcolor" *ngIf="btntabback3" (click)="Tab3back()">Back
+            to
+            Personal
+            details</button>
+
+        <button type="submit" class="btn- btn-primary" *ngIf="btntab3" (click)="Tab3()" routerLink='/home'>Save All
+            details</button>
+
+    </div>
+
+
+</div> -->
+
+
+
+<!-- MultiStep Form -->
+<div class="row">
+    <div class="col-md-12 col-md-offset-3-">
+        <form id="msform">
+            <!-- progressbar -->
+
+            <!-- fieldsets -->
+
+            <section id="tab1" class="tab-content whitebg" *ngIf="tab1">
+                <ul id="progressbar">
+                    <li class="active colr" id="1st">Personal details</li>
+                    <li>Mandate Details</li>
+                    <li>Bank details</li>
+                </ul>
+                <h2>Personal Details</h2>
+
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <label for="inputName">Name</label>
+                        <select name="name_with_initials" id="" class="slct">
+                            <option selected="selected" value="Operation">Mr.</option>
+                            <option value="NPA">Mrs.</option>
+                            <option value="BTS-Kurunegala">Miss.</option>
+                        </select>
+                        <input type="text" class="form-control spc_input" id="inputName" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputMnumber">Mobile Number</label>
+                        <input type="number" class="form-control slct right-border" id="inputMnumber"
+                            placeholder="Code">
+                        <input type="number" class="form-control spc_input" id="inputMnumber"
+                            placeholder="Enter your mobile no">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputTelephone">Telephone Number</label>
+                        <input type="number" class="form-control slct right-border" id="inputMnumber"
+                            placeholder="Code">
+                        <input type="number" class="form-control spc_input" id="inputTelephone"
+                            placeholder="Enter your telephone no">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                </div>
+            </section>
+
+            <section id="tab2" class="tab-content whitebg" *ngIf="tab2">
+
+                <ul id="progressbar">
+                    <li class="active colr" id="1st">Personal details</li>
+                    <li class="active colr">Mandate Details</li>
+                    <li>Bank details</li>
+                </ul>
+                <h2>Mandate details</h2>
+
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4">Frequency</label>
+
+                        <select class="form-group custom-select" id="">
+                            <option selected>Monthly/Quarterly/Half yearly</option>
+                            <option value="1">Monthly</option>
+                            <option value="2">Quarterly</option>
+                            <option value="3">Half yearly</option>
+                        </select>
+
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="mandatepurpose">Purpose of mandate</label>
+                        <select class="form-group custom-select" id="">
+                            <option selected>As per NPCI category</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputAddress">Bank</label>
+                        <select class="form-group custom-select" id="">
+                            <option selected>Customer bank</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputAddress">Authentication mode</label>
+                        <select class="form-group custom-select" id="">
+                            <option selected>Internet banking/ Debit card</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <div class="col-md-6" style="padding: 0 8px 0 0;">
+                            <label for="inputCity">Start date</label>
+                            <input type="date" class="form-control" id="inputCity" placeholder="Start date">
+                        </div>
+                        <div class="col-md-6" style="padding: 0;">
+                            <label for="inputCity">End date</label>
+                            <input type="date" class="form-control" id="inputCity" placeholder="End date">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputAmount">Amount</label>
+                        <input type="text" class="form-control slct-paisa right-border" id="inputAmount"
+                            placeholder="Paisa">
+                        <input type="text" class="form-control spc_input-" id="inputAmount"
+                            placeholder="Enter amount (INR)">
+                    </div>
+
+
+
+                    <div class="form-group col-md-4">
+                        <div class="form-check">
+
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Until cancelled
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-4">
+
+
+                        <label class="radio-inline"><input type="radio" name="optradio" checked>Fixed amount</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Maximum amount</label>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </section>
+
+            <section id="tab3" class="tab-content whitebg" *ngIf="tab3">
+
+                <ul id="progressbar">
+                    <li class="active colr" id="1st">Personal details</li>
+                    <li class="active colr">Mandate Details</li>
+                    <li class="active colr">Bank details</li>
+                </ul>
+                <h2>Bank details</h2>
+
+                <div class="row">
+
+
+
+                    <div class="form-group col-md-4">
+                        <label for="inputAccounttype">Account type</label>
+                        <label class="radio-inline"><input type="radio" name="optradio" checked>Saving Account</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Current Account</label>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputAccountnumber">Account number</label>
+                        <input type="number" class="form-control" id="inputAccountnumber"
+                            placeholder="Enter your account number">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputConfirmACN">Confirm account number</label>
+                        <input type="number" class="form-control" id="inputConfirmACN"
+                            placeholder="Enter Confirm account number">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Disclaimer/Terms and conditions
+                            </label>
+                        </div>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Disclaimer/Terms and conditions"></textarea>
+                    </div>
+                </div>
+
+
+
+            </section>
+
+            <div class="tab-content whitebg">
+                <button type="submit" class="btn- btn-primary" *ngIf="btntab1" (click)="Tab1()">Next</button>
+
+
+                <button type="submit" class="btn- btn-primary pad-right redcolor" *ngIf="btntabback2"
+                    (click)="Tab2back()">Back</button>
+
+
+                <button type="submit" class="btn- btn-primary" *ngIf="btntab2" (click)="Tab2()">Next </button>
+
+
+
+                <button type="submit" class="btn- btn-primary pad-right redcolor" *ngIf="btntabback3"
+                    (click)="Tab3back()">Back
+                </button>
+
+                <button type="submit" class="btn- btn-primary" *ngIf="btntab3" (click)="Tab3()" routerLink='/home'>Save
+                    All
+                    details</button>
+
+            </div>
+        </form>
+
+    </div>
+</div>
+<!-- /.MultiStep Form -->

@@ -1,0 +1,15 @@
+<app-header flexLayout="column"></app-header>
+
+<div flexLayout="row" fxFlex class="bgcolor">
+
+    <div class="col-lg-2 no-pad">
+        <app-sidebar fxFlex></app-sidebar>
+    </div>
+
+    <div class="content col-lg-10 no-pad">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>
+
+<app-footer></app-footer>

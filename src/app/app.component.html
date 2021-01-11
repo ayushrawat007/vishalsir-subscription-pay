@@ -1,0 +1,81 @@
+<router-outlet></router-outlet>
+<!-- <div class="container">
+  <div class="row loader" *ngIf="loading">
+    <img src="../../../assets/images/loading.gif" height="100" width="100" >
+  </div>  
+  <table class="table table-bordered table-hover">    
+    <tr>    
+      <th>Id</th>    
+      <th>Name</th>    
+      <th>Gender</th>    
+      <th>Mobile</th> 
+      <th>Action</th>   
+    </tr>    
+    <tr *ngFor="let item of xmlItems ; let j = index">    
+      <td>{{item.id}}</td>    
+      <td>{{item.name}}</td>    
+      <td>{{item.gender}}</td>    
+      <td>{{item.mobile}}</td>  
+      <td>
+        <button class="btn btn-info" data-toggle="modal" data-target="#myModal" data-dismiss="#"
+                          (click)="EditRecord(j)" data-toggle="tooltip" title="Edit record!">
+                         Edit
+                        </button> 
+                        <button class="btn btn-info" (click)="DeleteRecord(j)" data-toggle="tooltip" title="Delete!">
+                          Delete
+                        </button>
+      </td>  
+    </tr>    
+  </table> 
+  <div class="row">
+    <mat-tab-group mat-align-tabs="start" animationDuration="0ms">
+      <mat-tab label="First">Content 1</mat-tab>
+      <mat-tab label="Second">Content 2</mat-tab>
+      <mat-tab label="Third">Content 3</mat-tab>
+    </mat-tab-group>
+  </div>
+   <hr>
+   <div style="text-align:center">
+    <h1>
+      {{ title }}!
+    </h1>
+    <br>
+    <button type="button" (click)="getSelectedRec()">Click  </button> 
+  </div>
+  
+  <div class="container">
+    <div class="text-center mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="list-group">
+              <li class="list-group-item">
+                <input type="checkbox" [(ngModel)]="masterSelected" name="list_name" value="m1" (change)="checkUncheckAll()"/> <strong>Select/ Unselect All</strong>
+              </li>
+            </ul>
+            <ul class="list-group">
+              <li class="list-group-item" *ngFor="let item of checklist">
+                <input type="checkbox" [(ngModel)]="item.isSelected" name="list_name" value="{{item.id}}" (change)="isAllSelected()"/>
+                {{item.value}}
+              </li>
+            </ul>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- <hr>
+<div class="row">
+  <div class="col-md-2 align-top">
+    <div class="row paddLeft20"><button type="button" class="btn btn-info" (click)="AdminPortal()">Admin Portal  </button></div>
+    <div class="row paddLeft20 paddTop5" ><button type="button" class="btn btn-info" (click)="ReportPortal()">Report Portal  </button> </div>
+    <div class="row paddLeft20 paddTop5" ><button type="button" class="btn btn-info" (click)="COB()">COB  </button> </div>
+  </div>
+  <div class="col-md-10 align-top">
+    <iframe #iframe height="600" width="99%"></iframe>
+  </div>
+</div> -->
+
+
+
+
